@@ -32,6 +32,8 @@ nameserver 192.168.10.254
      encrypt passwords = yes
 ```
 - Winbind 配置
+
+  参考链接 https://www.samba.org/samba/docs/current/man-html/winbindd.8.html
 ```
 # /etc/nsswitch.conf
 
