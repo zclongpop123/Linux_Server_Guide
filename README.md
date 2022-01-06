@@ -37,6 +37,8 @@ passwd:     files winbind
 group:      files winbind
 ```
 - Kerberos 配置
+
+  参考链接 https://web.mit.edu/kerberos/krb5-latest/doc/admin/conf_files/krb5_conf.html#krb5-conf-5
 ```
 # /etc/krb5.conf
 
