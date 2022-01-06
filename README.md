@@ -10,6 +10,8 @@ dnf install samba-*
 nameserver 192.168.10.254
 ```
 - Samba 配置
+  
+  参考链接 https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html
 ```
 # /etc/samba/smb.conf
 
