@@ -16,8 +16,8 @@ nameserver 192.168.10.254
 # /etc/samba/smb.conf
 
 [global]
-     workgroup = TEST
-     realm = TEST.COM
+     workgroup = CONTOSO
+     realm = CONTOSO.COM
      security = ADS
      password server = 192.168.10.254  # password server是AD域控服务器IP
      
@@ -52,19 +52,19 @@ group:      files winbind
  renew_lifetime = 7d
  forwardable = true
  rdns = false
- default_realm = TEST.COM
+ default_realm = CONTOSO.COM
  default_ccache_name = KEYRING:persistent:%{uid}
 
 [realms]
-TEST.COM = {
+CONTOSO.COM = {
  kdc = 192.168.10.254:88
  # AD域控服务器IP
- default_domain = TEST.COM
+ default_domain = CONTOSO.COM
 }
 
 [domain_realm]
-.test.com = TEST.COM
-test.com = TEST.COM
+.contoso.com = CONTOSO.COM
+contoso.com = CONTOSO.COM
 ```
 - 将服务器加入域
 ```
