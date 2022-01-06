@@ -13,20 +13,21 @@ nameserver 192.168.10.254
 ```
 # /etc/samba/smb.conf
 
-workgroup = TEST
-realm = TEST.COM
-security = ADS
-password server = 192.168.10.254  # password server是AD域控服务器IP
-
-idmap uid = 10000 - 20000
-idmap gid = 10000 - 20000
-template shell = /sbin/nologin
-
-winbind separator = /
-winbind use default domain = yes
-winbind enum users = yes
-winbind enum groups = yes
-encrypt passwords = yes
+[global]
+     workgroup = TEST
+     realm = TEST.COM
+     security = ADS
+     password server = 192.168.10.254  # password server是AD域控服务器IP
+     
+     idmap uid = 10000 - 20000
+     idmap gid = 10000 - 20000
+     template shell = /sbin/nologin
+     
+     winbind separator = /
+     winbind use default domain = yes
+     winbind enum users = yes
+     winbind enum groups = yes
+     encrypt passwords = yes
 ```
 - Winbind 配置
 ```
