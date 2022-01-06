@@ -68,3 +68,8 @@ net ads join -U administrator
 systemctl restart smb
 systemctl restart winbind
 ```
+- 测试链接
+```bash
+wbinfo -t
+wbinfo -u
+```
