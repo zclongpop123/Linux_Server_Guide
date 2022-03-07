@@ -7,7 +7,7 @@ dnf install samba-*
 ```
 # /etc/resolv.conf
 
-nameserver 192.168.10.254
+nameserver 192.168.1.254
 ```
 - Samba 配置
   
@@ -19,7 +19,7 @@ nameserver 192.168.10.254
      workgroup = CONTOSO
      realm = CONTOSO.COM
      security = ADS
-     password server = 192.168.10.254  # password server是AD域控服务器IP
+     password server = 192.168.1.254  # password server是AD域控服务器IP
      
      idmap uid = 10000 - 20000
      idmap gid = 10000 - 20000
@@ -57,7 +57,7 @@ group:      files winbind
 
 [realms]
 CONTOSO.COM = {
- kdc = 192.168.10.254:88
+ kdc = 192.168.1.254:88
  # AD域控服务器IP
  default_domain = CONTOSO.COM
 }
