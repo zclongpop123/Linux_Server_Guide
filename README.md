@@ -1,7 +1,7 @@
 # Windows AD域用户访问 Linux Samba 服务
 - 安装 Samba
 ```bash
-dnf install samba-*
+dnf install samba*
 ```
 - DNS 配置
 ```
