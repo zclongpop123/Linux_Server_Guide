@@ -1,6 +1,6 @@
 Rocky 9.0 + Windows AD
 =
-- 安装以下软件包
+- 安装以下软件包 （此处软件包是为windows用户登录linux机器服务）
 ```bash
 dnf install realmd oddjob-mkhomedir oddjob samba-winbind-clients \
       samba-winbind samba-common-tools samba-winbind-krb5-locator
