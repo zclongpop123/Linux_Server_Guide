@@ -25,6 +25,7 @@ systemctl enable --now nmb
 - 防火墙添加服务
 ```bash
 firewall-cmd --add-service=samba --permanent
+firewall-cmd --reload
 ```
 参考连接：
 
