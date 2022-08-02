@@ -17,6 +17,7 @@ mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
 ```bash
 realm join --membership-software=samba --client-software=winbind ad.example.com
 ```
+- 启动Samba服务
 ```bash
 systemctl enable --now smb
 systemctl enable --now nmb
