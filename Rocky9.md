@@ -22,6 +22,10 @@ realm join --membership-software=samba --client-software=winbind ad.example.com
 systemctl enable --now smb
 systemctl enable --now nmb
 ```
+- 防火墙添加服务
+```bash
+firewall-cmd --add-service=samba --permanent
+```
 参考连接：
 
 https://access.redhat.com/documentation/zh-cn/red_hat_enterprise_linux/9/html/configuring_and_using_network_file_services/assembly_setting-up-samba-as-an-ad-domain-member-server_assembly_using-samba-as-a-server
