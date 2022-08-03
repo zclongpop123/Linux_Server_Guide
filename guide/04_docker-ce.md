@@ -11,7 +11,7 @@ dnf install -y yum-utils device-mapper-persistent-data lvm2
 ```
 - 下载repo文件
 ```bash
-yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 - 把软件仓库地址替换为 TUNA
 ```bash
