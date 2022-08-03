@@ -17,7 +17,7 @@ Linux服务器配置指南
 
 [1.3 设置时区](guide/02_timezone.md)
 
-[1.4 配置镜像源](guide/01_配置镜像源.md)
+[1.4 配置镜像源](guide/01_mirrors.md)
 
 [1.5 设置 SELinux](guide/02_关闭SELinux.md)
 
