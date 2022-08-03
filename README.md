@@ -13,9 +13,9 @@ Linux服务器配置指南
 -
 [1.1 切换运行环境](guide/00_boot_mode.md)
 
-[1.2 切换语言](guide/01_language.md)
+[1.2 设置语言](guide/01_language.md)
 
-[1.3 切换时区](guide/02_timezone.md)
+[1.3 设置时区](guide/02_timezone.md)
 
 [1.4 配置镜像源](guide/01_配置镜像源.md)
 
