@@ -1,6 +1,6 @@
-切换运行模式
+切换运行环境
 --
-- 查看当前模式
+- 查看当前环境
 ```bash
 systemctl get-default
 ```
