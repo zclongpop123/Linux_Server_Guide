@@ -1,5 +1,5 @@
 关闭SELinux
-=
+--
 - 查看状态
 ```bash
 getenforce
