@@ -25,4 +25,4 @@ Linux服务器配置指南
 
 [1.7 安装 DockerCE](guide/04_docker-ce.md)
 
-[1.8 安装 DockerCompose](guide/05_安装DockerCompose.md)
+[1.8 安装 DockerCompose](guide/05_docker-compose.md)
