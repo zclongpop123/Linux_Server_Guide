@@ -1,4 +1,4 @@
-Linux + Windows AD
+Samba 加入为 AD 域成员服务器
 =
 
 > #### 以下配置适用于 
