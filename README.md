@@ -17,12 +17,12 @@ Linux服务器配置指南
 
 [1.3 设置时区](guide/02_timezone.md)
 
-[1.4 配置镜像源](guide/01_mirrors.md)
+[1.4 配置镜像源](guide/03_mirrors.md)
 
-[1.5 设置 SELinux](guide/02_SELinux.md)
+[1.5 设置 SELinux](guide/04_SELinux.md)
 
-[1.6 设置为AD域成员服务器](guide/03_windows_domain.md)
+[1.6 设置为AD域成员服务器](guide/05_windows_domain.md)
 
-[1.7 安装 DockerCE](guide/04_docker-ce.md)
+[1.7 安装 DockerCE](guide/06_docker-ce.md)
 
-[1.8 安装 DockerCompose](guide/05_docker-compose.md)
+[1.8 安装 DockerCompose](guide/07_docker-compose.md)
