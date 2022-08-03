@@ -26,3 +26,8 @@ Linux服务器配置指南
 [1.7 安装 Docker CE](guide/06_docker-ce.md)
 
 [1.8 安装 Docker Compose](guide/07_docker-compose.md)
+
+[1.9 设置 Python PyPI 镜像](guide/08_python_pypi.md)
+
+
+
