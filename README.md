@@ -15,12 +15,14 @@ Linux服务器配置指南
 
 [1.2 切换语言](guide/01_language.md)
 
-[1.3 配置镜像源](guide/01_配置镜像源.md)
+[1.3 切换时区](guide/02_timezone.md)
 
-[1.4 关闭 SELinux](guide/02_关闭SELinux.md)
+[1.4 配置镜像源](guide/01_配置镜像源.md)
 
-[1.5 设置为AD域成员服务器](guide/03_设置为AD域成员服务器.md)
+[1.5 关闭 SELinux](guide/02_关闭SELinux.md)
 
-[1.6 安装 DockerCE](guide/04_安装DockerCE.md)
+[1.6 设置为AD域成员服务器](guide/03_设置为AD域成员服务器.md)
 
-[1.7 安装 DockerCompose](guide/05_安装DockerCompose.md)
+[1.7 安装 DockerCE](guide/04_安装DockerCE.md)
+
+[1.8 安装 DockerCompose](guide/05_安装DockerCompose.md)
