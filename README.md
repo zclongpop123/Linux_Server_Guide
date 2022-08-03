@@ -11,14 +11,16 @@ Linux服务器配置指南
 
 目录
 -
-[1.0 切换运行环境](guide/00_boot_mode.md)
+[1.1 切换运行环境](guide/00_boot_mode.md)
 
-[1.1 配置镜像源](guide/01_配置镜像源.md)
+[1.2 切换语言](guide/01_language.md)
 
-[1.2 关闭 SELinux](guide/02_关闭SELinux.md)
+[1.3 配置镜像源](guide/01_配置镜像源.md)
 
-[1.3 设置为AD域成员服务器](guide/03_设置为AD域成员服务器.md)
+[1.4 关闭 SELinux](guide/02_关闭SELinux.md)
 
-[1.4 安装 DockerCE](guide/04_安装DockerCE.md)
+[1.5 设置为AD域成员服务器](guide/03_设置为AD域成员服务器.md)
 
-[1.5 安装 DockerCompose](guide/05_安装DockerCompose.md)
+[1.6 安装 DockerCE](guide/04_安装DockerCE.md)
+
+[1.7 安装 DockerCompose](guide/05_安装DockerCompose.md)
