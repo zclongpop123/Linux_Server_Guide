@@ -4,6 +4,10 @@
 ```bash
 localectl list-locales
 ```
+- 安装语言包
+```bash
+dnf install langpacks-zh_CN
+```
 - 临时切换语言
 
 英文
