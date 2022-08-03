@@ -1,4 +1,4 @@
-关闭SELinux
+设置 SELinux
 --
 - 查看状态
 ```bash
