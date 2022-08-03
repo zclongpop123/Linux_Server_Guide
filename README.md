@@ -11,17 +11,17 @@ Linux服务器配置指南
 
 目录
 -
-[1.1 切换运行环境](guide/00_boot_mode.md)
+[1.1 设置 运行环境](guide/00_boot_mode.md)
 
-[1.2 设置语言](guide/01_language.md)
+[1.2 设置 语言](guide/01_language.md)
 
-[1.3 设置时区](guide/02_timezone.md)
+[1.3 设置 时区](guide/02_timezone.md)
 
-[1.4 配置镜像源](guide/03_mirrors.md)
+[1.4 设置 镜像源](guide/03_mirrors.md)
 
 [1.5 设置 SELinux](guide/04_SELinux.md)
 
-[1.6 设置为AD域成员服务器](guide/05_windows_domain.md)
+[1.6 设置 AD域成员服务器](guide/05_windows_domain.md)
 
 [1.7 安装 Docker CE](guide/06_docker-ce.md)
 
