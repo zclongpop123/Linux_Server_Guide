@@ -1,4 +1,4 @@
-Rocky 9.0 + Windows AD
+Linux + Windows AD
 =
 
 > #### 以下配置适用于 
