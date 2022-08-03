@@ -11,6 +11,8 @@ Linux服务器配置指南
 
 目录
 -
+[1.0 切换运行环境](guide/00_boot_mode.md)
+
 [1.1 配置镜像源](guide/01_配置镜像源.md)
 
 [1.2 关闭 SELinux](guide/02_关闭SELinux.md)
