@@ -4,7 +4,7 @@ Python PyPI
 ```bash
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 ```
-> 注意，simple 不能少, 是 https 而不是 http
+> *注意，simple 不能少, 是 https 而不是 http*
 
 - 升级pip
 ```bash
