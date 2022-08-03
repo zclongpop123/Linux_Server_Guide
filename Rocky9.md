@@ -1,6 +1,14 @@
-# Rocky 9.0 + Windows AD
+Rocky 9.0 + Windows AD
+=
 
-#### 以下配置适用于 RHEL8 RHEL9  Rocky8.6 Rocky9.0  AlmaLinux8.6  AlmaLinux9.0 
+> #### 以下配置适用于 
+> - RHEL 8
+> - RHEL 9
+> - Rocky 8.6
+> - Rocky 9.0
+> - AlmaLinux 8.6
+> - AlmaLinux 9.0 
+
 
 - 安装以下软件包 （此处软件包是为windows用户登录linux机器服务）
 ```bash
@@ -11,7 +19,7 @@ dnf install realmd oddjob-mkhomedir oddjob samba-winbind-clients \
 ```bash
 dnf install samba
 ```
-- 备份现有的/etc/samba/smb.conf Samba 配置文件
+- 备份现有的 **/etc/samba/smb.conf** Samba 配置文件
 ```bash
 mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
 ```
