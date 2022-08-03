@@ -33,7 +33,7 @@ systemctl enable --now docker
 Docker Hub 镜像
 --
 - 在配置文件 **/etc/docker/daemon.json** 中加入
-```bash
+```json
 {
     "registry-mirrors": [
         "https://docker.nju.edu.cn/",
