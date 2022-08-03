@@ -19,7 +19,7 @@ Linux服务器配置指南
 
 [1.4 配置镜像源](guide/01_mirrors.md)
 
-[1.5 设置 SELinux](guide/02_关闭SELinux.md)
+[1.5 设置 SELinux](guide/02_SELinux.md)
 
 [1.6 设置为AD域成员服务器](guide/03_设置为AD域成员服务器.md)
 
