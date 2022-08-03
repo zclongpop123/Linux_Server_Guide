@@ -28,3 +28,26 @@ systemctl enable --now docker
 ```
 - 参考连接
 > https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/
+
+
+Docker Hub 镜像
+--
+- 在配置文件 **/etc/docker/daemon.json** 中加入
+```bash
+{
+    "registry-mirrors": [
+        "https://docker.nju.edu.cn/",
+        "https://hub-mirror.c.163.com",
+        "https://mirror.baidubce.com"
+    ]
+}
+```
+
+- 重新启动docker
+```bash
+systemctl restart docker
+```
+- 参考连接
+> https://mirrors.nju.edu.cn/help/docker-hub
+> 
+> https://mirrors.ustc.edu.cn/help/dockerhub.html
