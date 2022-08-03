@@ -37,6 +37,5 @@ systemctl enable --now nmb
 firewall-cmd --add-service=samba --permanent
 firewall-cmd --reload
 ```
-参考连接：
-
-https://access.redhat.com/documentation/zh-cn/red_hat_enterprise_linux/9/html/configuring_and_using_network_file_services/assembly_setting-up-samba-as-an-ad-domain-member-server_assembly_using-samba-as-a-server
+- 参考连接：
+> https://access.redhat.com/documentation/zh-cn/red_hat_enterprise_linux/9/html/configuring_and_using_network_file_services/assembly_setting-up-samba-as-an-ad-domain-member-server_assembly_using-samba-as-a-server
