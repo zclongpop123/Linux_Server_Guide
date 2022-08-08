@@ -3,9 +3,9 @@
 - 将所有的官方主镜像地址替换为南京大学镜像站地址
 ```bash
 sed -e 's|^mirrorlist=|#mirrorlist=|g' \
- -e 's|^#baseurl=http://dl.rockylinux.org/$contentdir|baseurl=https://mirrors.nju.edu.cn/rocky|g' \
- -i.bak \
- /etc/yum.repos.d/[Rr]ocky*.repo
+    -e 's|^#baseurl=http://dl.rockylinux.org/$contentdir|baseurl=https://mirrors.sdu.edu.cn/rocky|g' \
+    -i.bak \
+    /etc/yum.repos.d/[Rr]ocky*.repo
 ```
 - 更新缓存
 ```bash
