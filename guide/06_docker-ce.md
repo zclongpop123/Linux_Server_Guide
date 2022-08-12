@@ -20,7 +20,7 @@ sed -i 's+download.docker.com+mirrors.tuna.tsinghua.edu.cn/docker-ce+' /etc/yum.
 - 安装
 ```bash
 dnf makecache
-dnf install docker-ce
+dnf install -y docker-ce
 ```
 - 启动
 ```bash
