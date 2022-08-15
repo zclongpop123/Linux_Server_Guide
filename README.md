@@ -30,6 +30,7 @@ Linux服务器配置指南
 
 [1.9 安装 Docker Compose](guide/07_docker-compose.md)
 
+---
 
 [2.1 设置 Python PyPI 镜像](guide/08_python_pypi.md)
 
