@@ -29,6 +29,7 @@ scrape_configs:
       - targets: ['192.168.10.1:9100']
         labels:
           instance: localhost
+          
   - job_name: server2
     static_configs:
       - targets: ['192.168.10.2:9100']
