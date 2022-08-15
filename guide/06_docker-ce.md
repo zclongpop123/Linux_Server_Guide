@@ -32,7 +32,7 @@ systemctl enable --now docker
 
 Docker Hub 镜像
 --
-- 在配置文件 **/etc/docker/daemon.json** 中加入
+- 在配置文件 `/etc/docker/daemon.json` 中加入
 ```json
 {
     "registry-mirrors": [
