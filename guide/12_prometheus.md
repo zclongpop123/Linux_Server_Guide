@@ -1,4 +1,4 @@
-Prometheus Exporter
+Prometheus
 --
 - 安装 Exporter
 ```bash
