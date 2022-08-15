@@ -30,12 +30,13 @@ Linux服务器配置指南
 
 [1.9 安装 Docker Compose](guide/07_docker-compose.md)
 
-[1.10 设置 Python PyPI 镜像](guide/08_python_pypi.md)
 
-[2.1 安装 Nginx](guide/11_nginx.md)
+[2.1 设置 Python PyPI 镜像](guide/08_python_pypi.md)
 
-[2.2 安装 Portainer](guide/10_portainer.md)
+[2.2 安装 Nginx](guide/11_nginx.md)
 
-[2.3 安装 Prometheus](guide/12_prometheus.md)
+[2.3 安装 Portainer](guide/10_portainer.md)
 
-[2.4 安装 Grafana](guide/13_grafana.md)
+[2.4 安装 Prometheus](guide/12_prometheus.md)
+
+[2.5 安装 Grafana](guide/13_grafana.md)
