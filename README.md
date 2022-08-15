@@ -32,5 +32,6 @@ Linux服务器配置指南
 
 [1.10 设置 Python PyPI 镜像](guide/08_python_pypi.md)
 
+[2.1 安装 Nginx](guide/11_nginx.md)
 
 [2.2 安装 Portainer](guide/10_portainer.md)
