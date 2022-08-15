@@ -24,16 +24,16 @@ scrape_configs:
         labels:
           instance: prometheus
  
-  - job_name: localhost
+  - job_name: server1
     static_configs:
-      - targets: ['192.168.10.104:9100']
+      - targets: ['192.168.10.1:9100']
         labels:
           instance: localhost
-
-  - job_name: server20
+  - job_name: server2
     static_configs:
-      - targets: ['192.168.10.20:9100']
+      - targets: ['192.168.10.2:9100']
         labels:
+          instance: server20
 ```
 - 安装 Promotheus
 ```bash
