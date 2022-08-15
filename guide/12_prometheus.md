@@ -11,7 +11,7 @@ docker run -d -p 9100:9100 \
   --name node-exporter \
   prom/node-exporter
  ```
-- 创建配置文件
+- 创建配置文件 `/opt/prometheus/prometheus.yml`
 ```bash
 global:
   scrape_interval:     60s
