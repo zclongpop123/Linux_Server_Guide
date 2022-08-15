@@ -36,6 +36,6 @@ Linux服务器配置指南
 
 [2.2 安装 Portainer](guide/10_portainer.md)
 
-[2.3 安装 Promethues](guide/12_promethues.md)
+[2.3 安装 Prometheus](guide/12_prometheus.md)
 
-[2.4 安装 Grafana](guide/10_grafana.md)
+[2.4 安装 Grafana](guide/13_grafana.md)
