@@ -18,17 +18,19 @@ Linux服务器配置指南
 
 [1.3 设置 时区](guide/02_timezone.md)
 
-[1.4 设置 镜像源](guide/03_mirrors.md)
+[1.4 设置 基础镜像源](guide/03_mirrors.md)
 
-[1.5 设置 SELinux](guide/04_SELinux.md)
+[1.5 设置 EPEL镜像源](guide/09_epel.md)
 
-[1.6 设置 AD域成员服务器](guide/05_windows_domain.md)
+[1.6 设置 SELinux](guide/04_SELinux.md)
 
-[1.7 安装 Docker CE](guide/06_docker-ce.md)
+[1.7 设置 AD域成员服务器](guide/05_windows_domain.md)
 
-[1.8 安装 Docker Compose](guide/07_docker-compose.md)
+[1.8 安装 Docker CE](guide/06_docker-ce.md)
 
-[1.9 设置 Python PyPI 镜像](guide/08_python_pypi.md)
+[1.9 安装 Docker Compose](guide/07_docker-compose.md)
+
+[1.10 设置 Python PyPI 镜像](guide/08_python_pypi.md)
 
 
 
