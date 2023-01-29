@@ -25,11 +25,13 @@ Linux服务器配置指南
 
 [1.6 配置 SELinux](guide/04_SELinux.md)
 
-[1.7 配置 AD域成员服务器](guide/05_windows_domain.md)
+[1.7 配置 Swap分区](guide/15_swap.md)
 
-[1.8 安装 Docker CE](guide/06_docker-ce.md)
+[1.8 配置 AD域成员服务器](guide/05_windows_domain.md)
 
-[1.9 安装 Docker Compose](guide/07_docker-compose.md)
+[1.9 安装 Docker CE](guide/06_docker-ce.md)
+
+[1.10 安装 Docker Compose](guide/07_docker-compose.md)
 
 ---
 
