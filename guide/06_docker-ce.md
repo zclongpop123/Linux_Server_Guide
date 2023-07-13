@@ -26,6 +26,9 @@ dnf install -y docker-ce
 ```bash
 systemctl enable --now docker
 ```
+```
+ln -s /usr/libexec/docker/cli-plugins/docker-compose /usr/local/bin/docker-compose
+```
 - 参考连接
 > https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/
 
