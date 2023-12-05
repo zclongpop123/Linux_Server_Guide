@@ -31,7 +31,7 @@ Linux服务器配置指南
 
 - [安装 Docker CE](guide/06_docker-ce.md)
 
-- [安装 Docker Compose](guide/07_docker-compose.md)
+- ~~[安装 Docker Compose](guide/07_docker-compose.md)~~
 
 ---
 
