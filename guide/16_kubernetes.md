@@ -2,7 +2,7 @@
 hostnamectl set-hostname  k8s-master-01
 ```
 ```bash
-echo "172.25.131.227   k8s-master-01"  >>/etc/hosts
+echo "192.168.0.170   k8s-master-01"  >>/etc/hosts
 ```
 ```bash
 swapoff -a
