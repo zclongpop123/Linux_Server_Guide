@@ -63,7 +63,7 @@ crictl config --set runtime-endpoint=unix:///run/containerd/containerd.sock
 ```
 ```bash
 kubeadm init --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers \
---apiserver-advertise-address=10.1.1.147 \
+--apiserver-advertise-address=192.168.0.170 \
 --kubernetes-version=v1.28.8 \
 --service-cidr=192.16.0.0/16 \
 --pod-network-cidr=10.0.0.0/16
