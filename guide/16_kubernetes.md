@@ -42,8 +42,7 @@ sed -e 's/registry.k8s.io/k8s.nju.edu.cn/g' \
     -e 's/SystemdCgroup = false/SystemdCgroup = true/g' \
 	-i.bak \
     /etc/containerd/config.toml
-```
-```bash
+
 systemctl daemon-reload
 systemctl restart  containerd
 ```
