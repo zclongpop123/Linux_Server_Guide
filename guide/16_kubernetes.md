@@ -47,11 +47,13 @@ systemctl daemon-reload
 systemctl restart  containerd
 ```
 ```bash
-cat <<'EOF' > /etc/yum.repos.d/kubernetes.repo
+cat <<EOF | tee /etc/yum.repos.d/kubernetes.repo
 [kubernetes]
-name=kubernetes
-baseurl=https://mirror.nju.edu.cn/kubernetes/yum/repos/kubernetes-el7-$basearch
+name=Kubernetes
+baseurl=https://mirrors.aliyun.com/kubernetes-new/core/stable/v1.28/rpm/
 enabled=1
+gpgcheck=1
+gpgkey=https://mirrors.aliyun.com/kubernetes-new/core/stable/v1.28/rpm/repodata/repomd.xml.key
 EOF
 
 dnf install -y kubelet kubeadm kubectl
