@@ -41,7 +41,7 @@ systemctl enable --now containerd
 containerd  config default > /etc/containerd/config.toml
 
 vim /etc/containerd/config.toml
-sandbox_image = "registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.9"
+sandbox_image = "k8s.nju.edu.cn/pause:3.9"
 SystemdCgroup = true  
 
 ```
