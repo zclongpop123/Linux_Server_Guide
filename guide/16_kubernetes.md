@@ -35,15 +35,13 @@ sysctl --system
 ```
 ```bash
 dnf install containerd.io -y
-
 systemctl enable --now containerd
 
 containerd  config default > /etc/containerd/config.toml
-
-vim /etc/containerd/config.toml
-sandbox_image = "k8s.nju.edu.cn/pause:3.9"
-SystemdCgroup = true  
-
+sed -e 's/registry.k8s.io/k8s.nju.edu.cn/g' \
+    -e 's/SystemdCgroup = false/SystemdCgroup = true/g' \
+	-i.bak \
+    /etc/containerd/config.toml
 ```
 ```bash
 systemctl daemon-reload
