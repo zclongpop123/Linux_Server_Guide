@@ -40,10 +40,7 @@ Docker Hub 镜像
 cat > /etc/docker/daemon.json << EOF
 {
     "registry-mirrors": [
-        "https://docker.nju.edu.cn/",
-        "https://docker.mirrors.sjtug.sjtu.edu.cn",
-        "https://hub-mirror.c.163.com",
-        "https://mirror.baidubce.com"
+        "https://docker.chenby.cn/"
     ]
 }
 EOF
