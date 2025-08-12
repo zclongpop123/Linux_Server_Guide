@@ -39,9 +39,18 @@ Docker Hub 镜像
 ```bash
 cat > /etc/docker/daemon.json << EOF
 {
-    "registry-mirrors": [
-        "https://docker.chenby.cn/"
-    ]
+  "registry-mirrors": [
+    "https://docker.1ms.run",
+    "https://docker.1panel.live",
+    "https://docker.xuanyuan.me",
+    "https://dockerproxy.net",
+    "https://image.cloudlayer.icu",
+    "https://docker-registry.nmqu.com",
+    "https://hub.amingg.com",
+    "https://docker.amingg.com",
+    "https://docker.hlmirror.com",
+    "https://hub3.nat.tf"
+  ]
 }
 EOF
 ```
