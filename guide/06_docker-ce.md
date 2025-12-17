@@ -15,7 +15,7 @@ dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce
 ```
 - 把软件仓库地址替换为 NJU
 ```bash
-sed -i 's+https://download.docker.com+https://mirror.nju.edu.cn/docker-ce+' /etc/yum.repos.d/docker-ce.repo
+sed -i 's+https://download.docker.com+https://mirrors.tuna.tsinghua.edu.cn/docker-ce+' /etc/yum.repos.d/docker-ce.repo
 ```
 - 安装
 ```bash
