@@ -84,10 +84,16 @@ gpgcheck=1
 gpgkey=https://pkgs.k8s.io/core:/stable:/v1.34/rpm/repodata/repomd.xml.key
 EOF
 
-dnf install -y kubelet kubeadm kubectl
-systemctl enable --now kubelet
+# 安装kubeadm、kubelet、kubectl
+yum install -y kubeadm-1.34.0 kubelet-1.34.0 kubectl-1.34.0 --disableexcludes=kubernetes
 
-crictl config --set runtime-endpoint=unix:///run/containerd/containerd.sock
+# 启动kubelet
+systemctl enable kubelet
+systemctl start kubelet
+
+# 验证安装
+kubeadm version
+kubelet --version
 ```
 - 初始化集群
 ```bash
