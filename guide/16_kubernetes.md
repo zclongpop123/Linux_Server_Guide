@@ -11,7 +11,23 @@ hostnamectl set-hostname k8s-node2
 ```
 - 设置hosts
 ```bash
-echo "192.168.0.170   k8s-master-01"  >>/etc/hosts
+cat >> /etc/hosts << EOF
+192.168.1.10 k8s-master
+192.168.1.11 k8s-node1
+192.168.1.12 k8s-node2
+EOF
+```
+- 关闭防火墙
+```
+# 关闭防火墙
+systemctl stop firewalld
+systemctl disable firewalld
+
+# 或者配置防火墙规则（生产环境推荐）
+firewall-cmd --permanent --add-port=6443/tcp
+firewall-cmd --permanent --add-port=2379-2380/tcp
+firewall-cmd --permanent --add-port=10250-10255/tcp
+firewall-cmd --reload
 ```
 - 关闭交换内存
 ```bash
