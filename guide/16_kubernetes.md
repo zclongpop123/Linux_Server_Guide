@@ -102,13 +102,24 @@ kubeadm init   --apiserver-advertise-address=192.168.1.10   --image-repository r
 ```
 - 设置kubectl环境
 ```bash
-cat <<EOF >> /root/.bashrc
-export KUBECONFIG=/etc/kubernetes/admin.conf
-EOF
+# 配置kubectl
+mkdir -p $HOME/.kube
+cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+chown $(id -u):$(id -g) $HOME/.kube/config
 
-source /root/.bashrc
+# 验证配置
+kubectl get nodes
+kubectl get pods -n kube-system
 ```
 - 安装网络插件
 ```bash
+# 安装Calico网络插件
 kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+
+# 或者使用Helm安装
+helm repo add projectcalico https://projectcalico.org/charts
+helm install calico projectcalico/tigera-operator --version 3.28.0 -n calico-system --create-namespace
+
+# 验证安装
+kubectl get pods -n kube-system | grep calico
 ```
