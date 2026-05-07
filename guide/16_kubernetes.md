@@ -29,19 +29,24 @@ firewall-cmd --permanent --add-port=2379-2380/tcp
 firewall-cmd --permanent --add-port=10250-10255/tcp
 firewall-cmd --reload
 ```
-- 关闭交换内存
-```bash
-swapoff -a
-sed -i 's/.*swap.*/#&/' /etc/fstab
-```
 - 关闭 selinux
 ```bash
+# 临时关闭
 setenforce 0
-sed -i 's/^SELINUX=enforcing$/SELINUX=disabled/' /etc/selinux/config
+
+# 永久关闭
+sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
+
+# 重启生效
+reboot
 ```
-- 关闭防火墙
+-  配置Swap分区
 ```bash
-systemctl disable --now firewalld
+# 临时关闭swap
+swapoff -a
+
+# 永久关闭（注释掉swap行）
+sed -i '/ swap / s/^/#/' /etc/fstab
 ```
 - 设置kuberntes
 ```bash
