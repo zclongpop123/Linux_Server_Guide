@@ -1,6 +1,13 @@
 - 设置计算机名
 ```bash
-hostnamectl set-hostname  k8s-master-01
+# Master节点
+hostnamectl set-hostname k8s-master
+
+# Node1节点
+hostnamectl set-hostname k8s-node1
+
+# Node2节点
+hostnamectl set-hostname k8s-node2
 ```
 - 设置hosts
 ```bash
