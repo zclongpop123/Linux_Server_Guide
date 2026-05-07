@@ -61,17 +61,29 @@ sysctl --system
 ```
 - 安装container.io
 ```bash
-dnf install containerd.io -y
-systemctl enable --now containerd
+# 安装Docker
+yum install -y yum-utils
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum install docker-ce docker-ce-cli containerd.io -y
 
-containerd  config default > /etc/containerd/config.toml
-sed -e 's/registry.k8s.io/k8s.nju.edu.cn/g' \
-    -e 's/SystemdCgroup = false/SystemdCgroup = true/g' \
-	-i.bak \
-    /etc/containerd/config.toml
+# 启动Docker
+systemctl start docker
+systemctl enable docker
 
-systemctl daemon-reload
-systemctl restart  containerd
+# 配置Docker使用systemd作为cgroup驱动
+cat > /etc/docker/daemon.json << EOF
+{
+  "exec-opts": ["native.cgroupdriver=systemd"],
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "100m"
+  },
+  "storage-driver": "overlay2"
+}
+EOF
+
+# 重启Docker
+systemctl restart docker
 ```
 - 安装kubernetes
 ```bash
