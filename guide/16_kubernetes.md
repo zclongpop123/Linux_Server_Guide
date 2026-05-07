@@ -135,3 +135,14 @@ helm install calico projectcalico/tigera-operator --version 3.28.0 -n calico-sys
 # 验证安装
 kubectl get pods -n kube-system | grep calico
 ```
+- 添加worker节点
+```
+# 在每个Worker节点上执行（使用初始化时生成的命令）
+kubeadm join 192.168.1.10:6443   --token abcdef.1234567890abcdef   --discovery-token-ca-cert-hash sha256:xxxxxx
+
+# 如果忘记token，可以重新生成
+kubeadm token create --print-join-command
+
+# 验证节点状态
+kubectl get nodes -o wide
+```
