@@ -56,13 +56,13 @@ systemctl restart  containerd
 ```
 - 安装kubernetes
 ```bash
-cat <<EOF | tee /etc/yum.repos.d/kubernetes.repo
+cat >> /etc/yum.repos.d/kubernetes.repo << EOF
 [kubernetes]
 name=Kubernetes
-baseurl=https://mirrors.aliyun.com/kubernetes-new/core/stable/v1.28/rpm/
+baseurl=https://mirrors.tuna.tsinghua.edu.cn/kubernetes/core:/stable:/v1.34/rpm/
 enabled=1
 gpgcheck=1
-gpgkey=https://mirrors.aliyun.com/kubernetes-new/core/stable/v1.28/rpm/repodata/repomd.xml.key
+gpgkey=https://pkgs.k8s.io/core:/stable:/v1.34/rpm/repodata/repomd.xml.key
 EOF
 
 dnf install -y kubelet kubeadm kubectl
