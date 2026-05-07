@@ -97,7 +97,7 @@ gpgkey=https://pkgs.k8s.io/core:/stable:/v1.34/rpm/repodata/repomd.xml.key
 EOF
 
 # 安装kubeadm、kubelet、kubectl
-yum install -y kubeadm-1.34.0 kubelet-1.34.0 kubectl-1.34.0 --disableexcludes=kubernetes
+yum install -y kubeadm kubelet kubectl --disableexcludes=kubernetes
 
 # 启动kubelet
 systemctl enable kubelet
