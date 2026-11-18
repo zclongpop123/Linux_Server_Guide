@@ -18,7 +18,7 @@ dnf install -y yum-utils
 ```
 - 下载repo文件
 ```bash
-dnf -config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
 ```
 - 安装
 ```bash
